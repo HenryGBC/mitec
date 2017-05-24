@@ -12,6 +12,10 @@
     font-family: 'Montserrat-Light';
     src: url('../fonts/Montserrat/Montserrat-Light.ttf');
 }
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
 html {
     color: #222;
     font-size: 1em;
@@ -175,7 +179,7 @@ body {
 }
 .home-section__container h1{
     font-family: 'Montserrat-Bold';
-    width: 590px;
+    width: 670px;
     font-size: 56px;
     font-weight: 700;
     line-height: 65px;
@@ -237,6 +241,12 @@ body {
     font-size: 55px;
     line-height: 44px;
     font-family: 'Montserrat-Bold';
+}
+.about-section__container .title span{
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 6px;
+    font-size: 50px;
+    font-weight: 600;
 }
 .about-section__container .description{
     width: 560px;
@@ -580,12 +590,14 @@ body {
         position: absolute;
         background-color: transparent !important;
         flex-direction: column;
+        padding: 40px 0;
     }
     .navbar .logo img{
         width: 120px;
     }
     .navbar ul{
         justify-content: center;
+        align-items: center;
         margin-left: 0;
         padding: 0;    
     }
@@ -597,7 +609,7 @@ body {
         font-size: 10px !important;
     }
     .navbar .navbar__contact{
-        border: none !important;
+        padding: 1px 10px;
     }
     .home-section__container{
         width: 90%;
@@ -639,6 +651,11 @@ body {
 
     .map-section .title{
         width: 90%;
+    }
+    .map-section {
+        background-size: 100% 100%;
+        padding: 0px;
+        height: 80vh;
     }
 
     .services-section {
