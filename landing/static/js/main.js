@@ -34,11 +34,21 @@
     function _initNavUrl(){
         $('.url').click(function(){
              var href = $(this).attr('data-url');
-             console.log(href);
              $('html, body').animate({
                 scrollTop: $(href).offset().top
             }, 1000);
         });
+        $(window).scroll(function(){     
+          _navScroll();
+        });
+
+    }
+    function _navScroll(){
+        if($(window).scrollTop() >10 ){
+            $(".navbar").addClass("navbar-white");
+        }else{
+            $(".navbar").removeClass("navbar-white");
+        }
     }
 
     function _initReveal(){

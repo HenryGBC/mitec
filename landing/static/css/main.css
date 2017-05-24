@@ -72,7 +72,7 @@ body {
 }
 
 .navbar{
-     position: absolute;
+     position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -144,6 +144,19 @@ body {
 }
 .navbar-white .navbar__contact{
     border: 2px solid #2C9EFF;
+}
+.navbar-white #logo-white{
+    display: none;
+}
+.navbar #logo-dark{
+    display: none;
+}
+.navbar #logo-dark img{ 
+    width: 110px;
+}
+
+.navbar-white #logo-dark{
+    display: block;
 }
 
 .wrapper {
@@ -247,6 +260,7 @@ body {
     margin-bottom: 6px;
     font-size: 50px;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.71);
 }
 .about-section__container .description{
     width: 560px;
@@ -586,17 +600,14 @@ body {
     }
 }
 @media only screen and (max-width: 768px) {
-    .navbar {
-        position: absolute;
-        background-color: transparent !important;
-        flex-direction: column;
-        padding: 40px 0;
-    }
     .navbar .logo img{
         width: 120px;
     }
+    .navbar {
+        padding: 5px 15px;
+    }
     .navbar ul{
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         margin-left: 0;
         padding: 0;    
@@ -605,7 +616,6 @@ body {
         padding: 0;
     }
     .navbar ul li a{
-        color: #fff !important;
         font-size: 10px !important;
     }
     .navbar .navbar__contact{
@@ -680,6 +690,15 @@ body {
 }
 
 @media only screen and (max-width: 590px){
+    .navbar .logo img {
+        width: 64px !important;
+        /* margin-top: 8px; */
+    }
+    .navbar ul li a {
+        font-size: 8px !important;
+        margin: 5px 0;
+        display: block;
+    }
     .services-section {
         padding: 20px;
         flex-direction: column;
@@ -705,5 +724,6 @@ body {
     .contact-section .form form .textarea textarea {
         height: 150px;
     }
+
 }
 
