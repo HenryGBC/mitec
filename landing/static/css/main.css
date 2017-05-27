@@ -251,13 +251,13 @@ body {
     margin-top: 21px;
     font-weight: 700;
     font-size: 55px;
-    line-height: 44px;
+    line-height: 50px;
     font-family: 'Montserrat-Bold';
 }
 .about-section__container .title span{
     font-family: 'Montserrat-Medium';
     margin-bottom: 6px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.71);
 }
